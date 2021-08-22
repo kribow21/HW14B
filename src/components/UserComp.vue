@@ -26,7 +26,7 @@
                 this.$store.commit('userChoice', "https://www.nicepng.com/png/detail/816-8161961_paper-icon-mickey-mouse-hand-drawing.png")
                 }
             }
-        },
+        }
     }
 </script>
 
