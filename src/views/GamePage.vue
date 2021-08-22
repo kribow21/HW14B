@@ -1,18 +1,16 @@
 <template>
-    <div>
-        <UserComp/>
-        <ComputerComp/>
-    </div>
+    <main>
+        <GameContainer/>
+    </main>
 </template>
 
 <script>
-import UserComp from '../components/UserComp.vue'
-import ComputerComp from '../components/ComputerComp.vue'
+import GameContainer from '../components/GameContainer.vue'
+
     export default {
         name : 'GamePage',
         components: {
-            UserComp,
-            ComputerComp
+            GameContainer
         },
     }
 </script>

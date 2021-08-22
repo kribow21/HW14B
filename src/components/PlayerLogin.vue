@@ -38,7 +38,9 @@ import cookies from 'vue-cookies'
             }).catch((error) => {
                 console.error("There was an error" +error);
                 document.getElementById('mes').innerText="You've failed to log in";
-
+                if(cookies.get('loginToken') == undefined){
+                document.getElementById('mes').innerText="You've failed to log in";
+                }
             })
         }
     },
