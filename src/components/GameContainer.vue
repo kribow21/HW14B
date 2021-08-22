@@ -1,7 +1,7 @@
 <template>
     <main>
         <UserComp :imgSrc="choice"></UserComp>
-        <ComputerComp :CompImgSrc="computerChoice"/>
+        <ComputerComp :compImgSrc="computerChoice"/>
         <GameScoreBoard/>
     </main>
 </template>

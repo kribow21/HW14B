@@ -17,6 +17,7 @@
 
         methods: {
             userChoice(option) {
+                this.$root.$emit('notifyCompTurn')
                 if (option == 'rock'){
                 this.$store.commit('userChoice', "https://ih1.redbubble.net/image.192018885.7805/st,small,507x507-pad,600x600,f8f8f8.jpg")
                 }else if (option == 'paper'){

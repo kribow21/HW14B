@@ -33,7 +33,7 @@ import cookies from 'vue-cookies'
             }).then((response) => {
                 console.log(response);
                 cookies.set('loginToken', response.data.token);
-                this.$router.push('GamePage.vue');
+                this.$router.push('GamePage');
 
             }).catch((error) => {
                 console.error("There was an error" +error);

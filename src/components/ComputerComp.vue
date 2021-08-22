@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>Computer</h1>
-        <img :src="randomImg">
+        <img :src="compImgSrc">
     </div>
 </template>
 
@@ -11,8 +11,11 @@
         props : {
         compImgSrc : String,
         },
+        mounted : function() {
+            this.$root.$on('notifyCompTurn', this.compChoice)
+        },
         methods: {
-            randomImg() {
+            compChoice() {
                 let array = ["rock", "paper", "scissors"];
                 let a =array[Math.floor(Math.random()* array.length)];
                 if (a == 'rock'){
